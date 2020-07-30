@@ -105,7 +105,6 @@ while running:
                     cabecaXChange = 0
                     cabecaYChange = 30
 
-
                 if (event.key == pygame.K_UP) and (cabecaYChange == 0):
                     imagemCabeca = pygame.image.load("cabeça_cima.png")
                     cabecaXChange = 0
