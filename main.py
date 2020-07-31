@@ -1,3 +1,5 @@
+#Autor: Arthur Moreira Passos
+
 import pygame
 from random import randint 
 
