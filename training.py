@@ -76,7 +76,7 @@ for c in range (2):
 
 
     #for i in range(39):
-    #    matriz_do_tabuleiro[(macaY-1)//30][(macaX-1)//30] = 
+    #    matriz_do_tabuleiro[(-1)//30][(-1)//30] = 
 
 
     # Jogo comeca indo para a direita
