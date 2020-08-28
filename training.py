@@ -52,7 +52,7 @@ for c in range (2):
 
     # Titulo e icone
     pygame.display.set_caption("Jogo da Cobrenha de ThurMP")
-    icone = pygame.image.load("snake icon.png")
+    icone = pygame.image.load("images/snake icon.png")
     fim_de_jogo = False
     rodada = 0
 
@@ -61,14 +61,14 @@ for c in range (2):
     font = pygame.font.Font('freesansbold.ttf', 32)
 
     # Cria e atualiza fundo
-    background = pygame.image.load("fundo_quadriculado_verde.png")
+    background = pygame.image.load("images/fundo_quadriculado_verde.png")
     screen.blit(background,(0,0))
 
     # Load das imagens
-    imagemCorpo = pygame.image.load("corpo.png")
-    imagemCabeca = pygame.image.load("cabeça_direita.png")
-    imagemQuadradoFundo = pygame.image.load("quadrado_do_fundo.png")
-    imagemMaca = pygame.image.load("maca1.png")
+    imagemCorpo = pygame.image.load("images/corpo.png")
+    imagemCabeca = pygame.image.load("images/cabeça_direita.png")
+    imagemQuadradoFundo = pygame.image.load("images/quadrado_do_fundo.png")
+    imagemMaca = pygame.image.load("images/maca1.png")
 
     # Configuracao inicial da cabeca
     cabecaX = 181
@@ -136,22 +136,22 @@ for c in range (2):
                 if not fim_de_jogo and rodada > 1:
                     # Nota: nao muda de direcao caso ja esteja indo para a desejada
                     if (event.key == pygame.K_LEFT) and (cabecaXChange == 0): 
-                        imagemCabeca = pygame.image.load("cabeça_esquerda.png")
+                        imagemCabeca = pygame.image.load("images/cabeça_esquerda.png")
                         cabecaXChange = -30
                         cabecaYChange = 0
 
                     if (event.key == pygame.K_RIGHT) and (cabecaXChange == 0):
-                        imagemCabeca = pygame.image.load("cabeça_direita.png")
+                        imagemCabeca = pygame.image.load("images/cabeça_direita.png")
                         cabecaXChange = 30
                         cabecaYChange = 0
 
                     if (event.key == pygame.K_DOWN) and (cabecaYChange == 0):
-                        imagemCabeca = pygame.image.load("cabeça_baixo.png")
+                        imagemCabeca = pygame.image.load("images/cabeça_baixo.png")
                         cabecaXChange = 0
                         cabecaYChange = 30
 
                     if (event.key == pygame.K_UP) and (cabecaYChange == 0):
-                        imagemCabeca = pygame.image.load("cabeça_cima.png")
+                        imagemCabeca = pygame.image.load("images/cabeça_cima.png")
                         cabecaXChange = 0
                         cabecaYChange = -30
 
